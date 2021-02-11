@@ -15,7 +15,7 @@ exports.usersGoodData = function () {
             "givenName": "Emma",
             "familyName": "Smith",
             "email": "emma.smith@example.com",
-            "password": "user1",
+            "password": "user1123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },
@@ -24,7 +24,7 @@ exports.usersGoodData = function () {
             "givenName": "Olivia",
             "familyName": "Jones",
             "email": "oliva.jones@example.com",
-            "password": "user2",
+            "password": "user2123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },
@@ -33,7 +33,7 @@ exports.usersGoodData = function () {
             "givenName": "Sophia",
             "familyName": "Williams",
             "email": "sophia.williams@example.com",
-            "password": "user3",
+            "password": "user3123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },
@@ -42,7 +42,7 @@ exports.usersGoodData = function () {
             "givenName": "Isabella",
             "familyName": "Brown",
             "email": "isabella.brown@example.com",
-            "password": "user4",
+            "password": "user4123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },
@@ -51,7 +51,7 @@ exports.usersGoodData = function () {
             "givenName": "Emily",
             "familyName": "Davies",
             "email": "Emily@Davies.com",
-            "password": "user5",
+            "password": "user5123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         }
@@ -71,7 +71,7 @@ exports.usersBadData = function () {
             "givenName": "Emily",
             "familyName": "Evans",
             "email": "emily.evans.userexample.com",
-            "password": "string",
+            "password": "string123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },
@@ -81,7 +81,7 @@ exports.usersBadData = function () {
             "givenName": "Emma",
             "familyName": "Smith",
             "email": "emma.smith@example.com",
-            "password": "user1",
+            "password": "user1123",
             "userid": 0, // get the userId when the user is created and store this
             "token" : "" // maintain a variable for token authorisation
         },

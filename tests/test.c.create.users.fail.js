@@ -34,31 +34,16 @@ describe('Test malformed creation of users.', function () {
             return chai.request(server_url)
                 .post('/user')
                 .send({
-                    given_name: user.givenName,
-                    family_name: user.familyName,
+                    first_name: user.givenName,
+                    last_name: user.familyName,
                     email: user.email,
                     password: user.password
                 })
                 .then(function (res) {
-                    expect(res).to.have.status(201);
-                    expect(res).to.be.json;
-                    expect(res.body).to.have.property('id');
-                    user.userid = res.body['id'];
-                    throw new Error('Incorrectly creating user.');
+                    expect(res).to.have.status(400);
                 })
                 .catch(function (err) {
-                    // expect(err).to.have.any.status(400, 500);
-
-                    if (typeof err.status !== 'undefined') {
-                        if (err.status === 400) {
-                            expect(err).to.have.status(400);
-                        } else if (err.status === 500) {
-                            expect(err).to.have.status(500);
-                        }
-                    }
-                    else {
-                        throw err;
-                    }
+                    console.log(err);
                 });
         });
     });

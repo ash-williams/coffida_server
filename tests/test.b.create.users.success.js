@@ -39,8 +39,8 @@ describe('Test successful creation of users.', function () {
             return chai.request(server_url)
                 .post('/user')
                 .send({
-                    given_name: user.givenName,
-                    family_name: user.familyName,
+                    first_name: user.givenName,
+                    last_name: user.familyName,
                     email: user.email,
                     password: user.password
                 })
