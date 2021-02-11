@@ -5,3 +5,8 @@ services:
   - mysql
 before_install:
   - mysql -e 'CREATE DATABASE ashley_student;'
+  before_script:
+  - npm install
+script:
+  - node app.js &
+  - npm test
